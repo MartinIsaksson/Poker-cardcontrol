@@ -22,7 +22,7 @@ namespace KortSpel
         private int Bet = 0;
         private int DealCounter = 0;
 
-        private Bitmap source = new Bitmap(@"C:\Users\martin\Pictures\PlayingCards\cards.png");
+        private Bitmap source = new Bitmap(@"C:\Users\martin\Pictures\PlayingCards\cards.png"); // Here you have to choose the png picture "cards.png" to make the code work. The background pic can be whatever you want.
         private List<Rectangle> savedCardValues = new List<Rectangle>();
         //   private List<Rectangle> SectionList = new List<Rectangle>();
         private List<CardControl> CardControls = new List<CardControl>();
