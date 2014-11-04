@@ -22,13 +22,13 @@ namespace KortSpel
         private int Bet = 0;
         private int DealCounter = 0;
 
-        private Bitmap source = new Bitmap(@"C:\Users\martin\Pictures\PlayingCards\cards.png"); // Here you have to choose the png picture "cards.png" to make the code work. The background pic can be whatever you want.
+        private Bitmap source = new Bitmap(@"C:\Users\martin\Pictures\PlayingCards\card-deck-contrast.png");
         private List<Rectangle> savedCardValues = new List<Rectangle>();
         //   private List<Rectangle> SectionList = new List<Rectangle>();
         private List<CardControl> CardControls = new List<CardControl>();
         //  Cards Cards = new Cards();
 
-        private List<CheckBox> boxes;
+       // private List<CheckBox> boxes;
 
         public RandomCards()
         {
@@ -154,7 +154,10 @@ namespace KortSpel
         }
 
         private void CheckCardsbox(Bitmap source, List<Rectangle> SectionList)
-        {
+        { 
+           
+          
+            
             for (int i = 0; i < CardControls.Count; i++)
             {
                 if (!CardControls[i].checkControlBox)
@@ -239,8 +242,8 @@ namespace KortSpel
         private List<Rectangle> PlaceRandomCards()
         {
             List<Rectangle> SectionList = new List<Rectangle>();
-            int width = 105;
-            int height = 164;
+            int width = 122;
+            int height = 173;
             for (int i = 0; i < 5; i++)
             {
                 Rectangle tempPos = new Rectangle(new Point(PointWidth(), PointHeight()), new Size(width, height));
@@ -365,7 +368,7 @@ namespace KortSpel
         {
             Random randWidth = new Random();
             int widthMultiplier = randWidth.Next(0, 13);
-            widthMultiplier = widthMultiplier * 79;
+            widthMultiplier = widthMultiplier * 132;
             return widthMultiplier;
         }
 
@@ -373,14 +376,14 @@ namespace KortSpel
         {
             Random randHeight = new Random();
             int heightMultiplier = randHeight.Next(0, 4);
-            heightMultiplier = heightMultiplier * 123;
+            heightMultiplier = heightMultiplier * 186;
             return heightMultiplier;
         }
         public Bitmap CropImage(Bitmap source, Rectangle section)
         {
 
-
-            Bitmap bitmap = new Bitmap(section.Width, section.Height);
+            
+            Bitmap bitmap = new Bitmap(122, 173);
             Graphics g = Graphics.FromImage(bitmap);
             g.DrawImage(source, 0, 0, section, GraphicsUnit.Pixel);
 

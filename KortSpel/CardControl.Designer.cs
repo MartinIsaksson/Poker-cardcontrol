@@ -38,9 +38,9 @@
             // 
             this.hold.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.hold.Font = new System.Drawing.Font("Segoe Marker", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hold.Location = new System.Drawing.Point(3, 152);
+            this.hold.Location = new System.Drawing.Point(3, 207);
             this.hold.Name = "hold";
-            this.hold.Size = new System.Drawing.Size(95, 50);
+            this.hold.Size = new System.Drawing.Size(146, 50);
             this.hold.TabIndex = 24;
             this.hold.Text = "HOLD";
             this.hold.UseVisualStyleBackColor = false;
@@ -70,7 +70,7 @@
             this.Card.ForeColor = System.Drawing.Color.Transparent;
             this.Card.Location = new System.Drawing.Point(3, 3);
             this.Card.Name = "Card";
-            this.Card.Size = new System.Drawing.Size(95, 139);
+            this.Card.Size = new System.Drawing.Size(146, 198);
             this.Card.TabIndex = 22;
             this.Card.TabStop = false;
             this.Card.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -87,7 +87,7 @@
             this.Controls.Add(this.checkBox);
             this.Controls.Add(this.Card);
             this.Name = "CardControl";
-            this.Size = new System.Drawing.Size(100, 216);
+            this.Size = new System.Drawing.Size(152, 260);
             this.Load += new System.EventHandler(this.CardControl_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

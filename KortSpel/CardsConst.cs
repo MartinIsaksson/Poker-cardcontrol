@@ -12,63 +12,37 @@ namespace KortSpel
         public List<Card> Cards;
         public CardsConst()
         {
-
-
-         Cards = new List<Card> // Skriver ut alla kort och var de har för position i bilden
+            Cards = new List<Card>();
+            int posX = 132;
+            int posY = 186;
+            string typeOfCard = "Clubs";
+            for (int y = 0; y < 4; y++)
             {
-            new Card { posX = 0, posY = 0, TypeOfCard = "Clubs", Value = 14 },
-            new Card { posX = 79, posY = 0, TypeOfCard = "Clubs", Value = 2 },
-            new Card { posX = 158, posY = 0, TypeOfCard = "Clubs", Value = 3 },
-            new Card { posX = 237, posY = 0, TypeOfCard = "Clubs", Value = 4 },
-            new Card { posX = 316, posY = 0, TypeOfCard = "Clubs", Value = 5 },
-            new Card { posX = 395, posY = 0, TypeOfCard = "Clubs", Value = 6 },
-            new Card { posX = 474, posY = 0, TypeOfCard = "Clubs", Value = 7 },
-            new Card { posX = 553, posY = 0, TypeOfCard = "Clubs", Value = 8 },
-            new Card { posX = 632, posY = 0, TypeOfCard = "Clubs", Value = 9 },
-            new Card { posX = 711, posY = 0, TypeOfCard = "Clubs", Value = 10 },
-            new Card { posX = 790, posY = 0, TypeOfCard = "Clubs", Value = 11 },
-            new Card { posX = 869, posY = 0, TypeOfCard = "Clubs", Value = 12 },
-            new Card { posX = 948, posY = 0, TypeOfCard = "Clubs", Value = 13 },
-            new Card { posX = 0, posY = 123, TypeOfCard = "Diamonds", Value = 14 },
-            new Card { posX = 79, posY = 123, TypeOfCard = "Diamonds", Value = 2 },
-            new Card { posX = 158, posY = 123, TypeOfCard = "Diamonds", Value = 3 },
-            new Card { posX = 237, posY = 123, TypeOfCard = "Diamonds", Value = 4 },
-            new Card { posX = 316, posY = 123, TypeOfCard = "Diamonds", Value = 5 },
-            new Card { posX = 395, posY = 123, TypeOfCard = "Diamonds", Value = 6 },
-            new Card { posX = 474, posY = 123, TypeOfCard = "Diamonds", Value = 7 },
-            new Card { posX = 553, posY = 123, TypeOfCard = "Diamonds", Value = 8 },
-            new Card { posX = 632, posY = 123, TypeOfCard = "Diamonds", Value = 9 },
-            new Card { posX = 711, posY = 123, TypeOfCard = "Diamonds", Value = 10 },
-            new Card { posX = 790, posY = 123, TypeOfCard = "Diamonds", Value = 11 },
-            new Card { posX = 869, posY = 123, TypeOfCard = "Diamonds", Value = 12 },
-            new Card { posX = 948, posY = 123, TypeOfCard = "Diamonds", Value = 13 },
-            new Card { posX = 0, posY = 246, TypeOfCard = "Hearts", Value = 14 },
-            new Card { posX = 79, posY = 246, TypeOfCard = "Hearts", Value = 2 },
-            new Card { posX = 158, posY = 246, TypeOfCard = "Hearts", Value = 3 },
-            new Card { posX = 237, posY = 246, TypeOfCard = "Hearts", Value = 4 },
-            new Card { posX = 316, posY = 246, TypeOfCard = "Hearts", Value = 5 },
-            new Card { posX = 395, posY = 246, TypeOfCard = "Hearts", Value = 6 },
-            new Card { posX = 474, posY = 246, TypeOfCard = "Hearts", Value = 7 },
-            new Card { posX = 553, posY = 246, TypeOfCard = "Hearts", Value = 8 },
-            new Card { posX = 632, posY = 246, TypeOfCard = "Hearts", Value = 9 },
-            new Card { posX = 711, posY = 246, TypeOfCard = "Hearts", Value = 10 },
-            new Card { posX = 790, posY = 246, TypeOfCard = "Hearts", Value = 11 },
-            new Card { posX = 869, posY = 246, TypeOfCard = "Hearts", Value = 12 },
-            new Card { posX = 948, posY = 246, TypeOfCard = "Hearts", Value = 13 },
-            new Card { posX = 0, posY = 369, TypeOfCard = "Spades", Value = 14 },
-            new Card { posX = 79, posY = 369, TypeOfCard = "Spades", Value = 2 },
-            new Card { posX = 158, posY = 369, TypeOfCard = "Spades", Value = 3 },
-            new Card { posX = 237, posY = 369, TypeOfCard = "Spades", Value = 4 },
-            new Card { posX = 316, posY = 369, TypeOfCard = "Spades", Value = 5 },
-            new Card { posX = 395, posY = 369, TypeOfCard = "Spades", Value = 6 },
-            new Card { posX = 474, posY = 369, TypeOfCard = "Spades", Value = 7 },
-            new Card { posX = 553, posY = 369, TypeOfCard = "Spades", Value = 8 },
-            new Card { posX = 632, posY = 369, TypeOfCard = "Spades", Value = 9 },
-            new Card { posX = 711, posY = 369, TypeOfCard = "Spades", Value = 10 },
-            new Card { posX = 790, posY = 369, TypeOfCard = "Spades", Value = 11 },
-            new Card { posX = 869, posY = 369, TypeOfCard = "Spades", Value = 12 },
-            new Card { posX = 948, posY = 369, TypeOfCard = "Spades", Value = 13 }
-            };
+                if (y == 0)
+                {
+
+                    typeOfCard = "Diamonds";
+                }
+                else if (y == 1)
+                {
+                    typeOfCard = "Clubs";
+                }
+                else if (y == 2)
+                {
+                    typeOfCard = "Hearts";
+                }
+                else if (y == 3)
+                {
+                    typeOfCard = "Spades";
+                }
+                int value = 1;
+                for (int x = 0; x < 13; x++)
+                {
+                    Cards.Add(new Card { posX = (posX * x), posY = (posY * y), TypeOfCard = typeOfCard, Value = (value + 1) });
+                    value++;
+                }
+
+            }
 
         }
     }

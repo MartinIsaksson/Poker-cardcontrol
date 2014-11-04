@@ -69,7 +69,7 @@
             this.listBox1.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 28;
-            this.listBox1.Location = new System.Drawing.Point(12, 12);
+            this.listBox1.Location = new System.Drawing.Point(12, 367);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(248, 196);
             this.listBox1.TabIndex = 8;
@@ -94,7 +94,7 @@
             this.AnnouncerLabel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.AnnouncerLabel.Font = new System.Drawing.Font("Arial Black", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AnnouncerLabel.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.AnnouncerLabel.Location = new System.Drawing.Point(320, 97);
+            this.AnnouncerLabel.Location = new System.Drawing.Point(274, 56);
             this.AnnouncerLabel.Name = "AnnouncerLabel";
             this.AnnouncerLabel.Size = new System.Drawing.Size(392, 40);
             this.AnnouncerLabel.TabIndex = 15;
@@ -214,9 +214,9 @@
             this.cardControl5.CardImage = null;
             this.cardControl5.checkControlBox = false;
             this.cardControl5.HoldButtonColor = System.Drawing.Color.Empty;
-            this.cardControl5.Location = new System.Drawing.Point(648, 151);
+            this.cardControl5.Location = new System.Drawing.Point(672, 99);
             this.cardControl5.Name = "cardControl5";
-            this.cardControl5.Size = new System.Drawing.Size(91, 193);
+            this.cardControl5.Size = new System.Drawing.Size(136, 244);
             this.cardControl5.TabIndex = 34;
             // 
             // cardControl4
@@ -225,9 +225,9 @@
             this.cardControl4.CardImage = null;
             this.cardControl4.checkControlBox = false;
             this.cardControl4.HoldButtonColor = System.Drawing.Color.Empty;
-            this.cardControl4.Location = new System.Drawing.Point(555, 152);
+            this.cardControl4.Location = new System.Drawing.Point(538, 99);
             this.cardControl4.Name = "cardControl4";
-            this.cardControl4.Size = new System.Drawing.Size(96, 193);
+            this.cardControl4.Size = new System.Drawing.Size(141, 244);
             this.cardControl4.TabIndex = 33;
             // 
             // cardControl3
@@ -236,9 +236,9 @@
             this.cardControl3.CardImage = null;
             this.cardControl3.checkControlBox = false;
             this.cardControl3.HoldButtonColor = System.Drawing.Color.Empty;
-            this.cardControl3.Location = new System.Drawing.Point(459, 153);
+            this.cardControl3.Location = new System.Drawing.Point(401, 99);
             this.cardControl3.Name = "cardControl3";
-            this.cardControl3.Size = new System.Drawing.Size(109, 193);
+            this.cardControl3.Size = new System.Drawing.Size(131, 246);
             this.cardControl3.TabIndex = 32;
             // 
             // cardControl2
@@ -247,9 +247,9 @@
             this.cardControl2.CardImage = null;
             this.cardControl2.checkControlBox = false;
             this.cardControl2.HoldButtonColor = System.Drawing.Color.Empty;
-            this.cardControl2.Location = new System.Drawing.Point(367, 153);
+            this.cardControl2.Location = new System.Drawing.Point(266, 99);
             this.cardControl2.Name = "cardControl2";
-            this.cardControl2.Size = new System.Drawing.Size(95, 193);
+            this.cardControl2.Size = new System.Drawing.Size(145, 245);
             this.cardControl2.TabIndex = 31;
             // 
             // cardControl1
@@ -258,9 +258,9 @@
             this.cardControl1.CardImage = null;
             this.cardControl1.checkControlBox = false;
             this.cardControl1.HoldButtonColor = System.Drawing.Color.Empty;
-            this.cardControl1.Location = new System.Drawing.Point(277, 153);
+            this.cardControl1.Location = new System.Drawing.Point(128, 99);
             this.cardControl1.Name = "cardControl1";
-            this.cardControl1.Size = new System.Drawing.Size(100, 193);
+            this.cardControl1.Size = new System.Drawing.Size(132, 247);
             this.cardControl1.TabIndex = 30;
             // 
             // RandomCards
@@ -272,7 +272,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImage = global::KortSpel.Properties.Resources.blackBackgroundPoker;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1064, 483);
+            this.ClientSize = new System.Drawing.Size(1064, 594);
             this.Controls.Add(this.numberofShufflesLeftBar);
             this.Controls.Add(this.cardControl5);
             this.Controls.Add(this.cardControl4);
